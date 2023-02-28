@@ -19,9 +19,9 @@ class LegibilityModel(PreTrainedModel):
         )
 
     # choice, img0, img1 are not used by the model, but are passed by the trainer
-    def forward(self, img_batch, choice, img0, img1):
+    def forward(self, img_batch, choice=None, img0=None, img1=None):
         output = self.model(img_batch)
         # average the output of the last hidden layer
         output = output.last_hidden_state.mean(dim=1)
         scores = self.stack(output)
-        return scores
+        return scores.squeeze()
