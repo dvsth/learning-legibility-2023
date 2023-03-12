@@ -3,8 +3,6 @@ This is the repo for *Learning the Legibility of Visual Text Perturbations* (EAC
 
 Dev Seth, Rickard Stureborg, Danish Pruthi and Bhuwan Dhingra
 
-
-
 Dataset available [here](https://huggingface.co/datasets/dvsth/LEGIT).
 Model available [here](https://huggingface.co/dvsth/LEGIT-TrOCR-MT).
 
